@@ -83,10 +83,16 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'd3qsmv5ammgm2j',
+        'HOST': 'ec2-100-26-39-41.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'fozhiiihpmtwll',
+        'PASSWORD': '6c0195695b1f9acef655825891efa4a963eea578fb2909bbedd54178702e9d57'
     }
 }
+
 
 
 # Password validation
