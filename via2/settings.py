@@ -12,8 +12,15 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+env = environ.Env()
+
+environ.ENV.read_env()
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -85,13 +92,13 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
         # 'NAME': BASE_DIR / 'db.sqlite3',
-        'NAME': 'd3qsmv5ammgm2j',
-        'HOST': 'ec2-100-26-39-41.compute-1.amazonaws.com:5432',
+        'NAME': env('DATABASE_NAME'),
+        'HOST': env('DATABASE_HOST'),
         'PORT': 5432,
-        'USER': 'fozhiiihpmtwll',
-        'PASSWORD': '6c0195695b1f9acef655825891efa4a963eea578fb2909bbedd54178702e9d57',
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASSWORD'),
 
         
     }
