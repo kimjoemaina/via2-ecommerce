@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-8-mj_7h-=u9&t%e3xm!)8x20yvz)vfm3dblg91rpavsj$wm*9d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['via2-ecommerce.herokuapp.com']
+ALLOWED_HOSTS = ['via2-ecommerce.herokuapp.com', '0.0.0.0']
 
 # Application definition
 
@@ -84,7 +84,14 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'd3qsmv5ammgm2j',
+        'HOST': 'ec2-100-26-39-41.compute-1.amazonaws.com:5432',
+        'PORT': 5432,
+        'USER': 'fozhiiihpmtwll',
+        'PASSWORD': '6c0195695b1f9acef655825891efa4a963eea578fb2909bbedd54178702e9d57',
+
+        
     }
 }
 
