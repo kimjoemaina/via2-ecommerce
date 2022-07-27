@@ -92,6 +92,8 @@ def place_order(request, total=0, quantity=0):
         quantity += cart_item.cart_quantity
     tax = (16 * total)/100
     grand_total = total + tax
+    conversion = grand_total / 118
+    converted = round(conversion, 2)
 
     if request.method == 'POST':
         form = OrderForm(request.POST)
@@ -130,7 +132,8 @@ def place_order(request, total=0, quantity=0):
                 'cart_items': cart_items,
                 'total': total,
                 'tax': tax,
-                'grand_total': grand_total
+                'grand_total': grand_total,
+                'converted': converted,
             }
             return render(request, 'orders/payments.html', context)
     else:
