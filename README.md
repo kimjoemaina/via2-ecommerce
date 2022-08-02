@@ -33,6 +33,7 @@ Features:
 - Checkout (PayPal, Debit/Credit card supported)
 - User registration and login forms.
 - User profile update.
+- Search functionality.
 
 ## 🧪 Demo
 
@@ -44,7 +45,9 @@ Ensure that you get rid of all development parameters before deploying to produc
 
 If you'd like to contribute, feel free to open a [pull request](https://github.com/kimjoemaina/POS/pulls) and we can collaborate!
 
-## Donate
+## 🫙 Donate
+
+Buy me a coffee to help me keep going! ☕
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=XVNG6ATBXFJAC)\
 
