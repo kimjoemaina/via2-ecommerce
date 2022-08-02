@@ -1,9 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
-from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.core.paginator import Paginator
 from django.core.exceptions import ObjectDoesNotExist
-from .models import Product, Category, Cart, CartItem, Variation
+from django.db.models import Q
 from django.contrib.auth.decorators import login_required
+from .models import Product, Category, Cart, CartItem, Variation
 
 
 # Create your views here.
@@ -256,3 +257,16 @@ def checkout(request, total=0, cart_quantity=0, cart_items = None):
         'grand_total': grand_total,
     }
     return render(request, 'store/checkout.html', context)
+
+def search(request):
+    if 'keyword' in request.GET:
+        keyword = request.GET['keyword']
+        if keyword:
+            products = Product.objects.order_by('-created_date').filter(Q(description__icontains=keyword) | Q(product_name__icontains=keyword))
+            product_count = products.count()
+    
+    context = {
+        'products' : products,
+        'product_count' : product_count
+    }
+    return render(request, 'store/store.html', context)
