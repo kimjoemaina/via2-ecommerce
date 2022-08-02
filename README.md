@@ -1,5 +1,6 @@
-# Via2-Ecommerce Django Application
 <p align="center"><img src="https://via2-ecommerce.s3.amazonaws.com/images/logo.png" width="auto" height="auto"></p>
+<h3 align="center">Via2-Ecommerce Django Application/h3>
+
 ## Prerequisites
 
 To run the application in your environment, you need 
