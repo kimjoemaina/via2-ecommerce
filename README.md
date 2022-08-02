@@ -5,7 +5,7 @@
 <p align="center">
   <a href="#-prerequisites">Prerequisites</a> · <a href="#-introduction">Introduction</a> · <a href="#-Demo">Demo</a> · 
   <a href="#-contributing">Contributing</a> · <a href="#-faq">FAQ</a> · 
-  <a href="#-keep-the-machine-running">Donate</a>
+  <a href="#-donate">Donate</a>
 </p>
 
 ## Prerequisites
@@ -18,7 +18,7 @@ To run the application in your environment, you need:
 
 ## 🤝 Introduction
 
-Via2 is a play on the swahili word 'viatu' which means shoes. The web app employs Django as the back-end and HTML, CSS, JS for the front-end.
+Via2 is wordplay on the swahili word 'viatu' which means shoes. The web app employs Django as the back-end and HTML, CSS, JS for the front-end.
 
 The DB used in Postgres. However, you can use any database of your choice. Ensure to enter your credentials in the settings file and to update your environemt variables.
 
@@ -27,7 +27,26 @@ NB: The PayPal checkout is currently a development sandbox. Customize this to yo
 Features:
 
 - Adding, updating, deleting products and their variations.
-- Checkout (PayPal, Debit/Credit card supported)
-- Adding multiple variations to cart.
+- Product categories.
 - Paginator. (Currenty set to 3 products per page on the [Store](https://via2-ecommerce.herokuapp.com/store/) page )
+- Adding multiple variations to cart.
+- Checkout (PayPal, Debit/Credit card supported)
+- User registration and login forms.
+- User profile update.
+
+## 🧪 Demo
+
+The demo can be accessed [here](https://via2-ecommerce.herokuapp.com/store/).
+
+Ensure that you get rid of all development parameters before deploying to production.
+
+## 📢 Contributing
+
+If you'd like to contribute, feel free to open a [pull request](https://github.com/kimjoemaina/POS/pulls) and we can collaborate!
+
+## Donate
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=XVNG6ATBXFJAC)\
+
+
 
