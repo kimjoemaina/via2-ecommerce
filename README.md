@@ -4,8 +4,7 @@
 
 <p align="center">
   <a href="#-prerequisites">Prerequisites</a> · <a href="#-introduction">Introduction</a> · <a href="#-Demo">Demo</a> · 
-  <a href="#-contributing">Contributing</a> · <a href="#-faq">FAQ</a> · 
-  <a href="#-donate">Donate</a>
+  <a href="#-contributing">Contributing</a> · <a href="#-donate">Donate</a>
 </p>
 
 ## Prerequisites
