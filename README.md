@@ -44,7 +44,7 @@ Ensure that you get rid of all development parameters before deploying to produc
 
 If you'd like to contribute, feel free to open a [pull request](https://github.com/kimjoemaina/POS/pulls) and we can collaborate!
 
-## 🫙 Donate
+## 💰 Donate
 
 Buy me a coffee to help me keep going! ☕
 
