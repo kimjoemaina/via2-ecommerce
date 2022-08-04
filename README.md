@@ -46,7 +46,7 @@ If you'd like to contribute, feel free to open a [pull request](https://github.c
 
 ## 💰 Donate
 
-Buy me a coffee to keep me motivated! ☕
+Buy me a coffee. It'll help me stay motivated! ☕
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=XVNG6ATBXFJAC)\
 
