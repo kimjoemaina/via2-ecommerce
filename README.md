@@ -21,6 +21,8 @@ Via2 is wordplay on the swahili word 'viatu' which means shoes. The web app empl
 
 The DB used in Postgres. However, you can use any database of your choice. Ensure to enter your credentials in the settings file and to update your environemt variables.
 
+Additionally, static/media files are stored in AWS S3 buckets. You need to have prior knowledge of AWS buckets and IAM to configure S3.
+
 NB: The PayPal checkout is currently a development sandbox. Customize this to your own sandbox for testing. Also note that on checkout the grand total (KES) is converted to USD.
 
 Features:
