@@ -6,7 +6,7 @@ from .forms import RegistrationForm, UserForm, UserProfileForm
 from .models import UserProfile, Account
 from store.models import Cart, CartItem
 from store.views import _cart_id
-from orders.models import Order
+from orders.models import Order, OrderProduct
 import requests
 
 # Email verification
@@ -204,4 +204,16 @@ def update_password(request):
 
 @login_required(login_url = 'login')
 def order_detail(request, order_id):
-    return render(request, 'useraccounts/order_detail.html')
+    order_detail = OrderProduct.objects.filter(order__order_number=order_id)
+    order = Order.objects.get(order_number=order_id)
+    subtotal = 0
+
+    for i in order_detail:
+        subtotal += i.product_price * i.quantity
+
+    context = {
+        'order_detail' : order_detail,
+        'order' : order,
+        'subtotal' : subtotal, 
+    }
+    return render(request, 'useraccounts/order_detail.html', context)
