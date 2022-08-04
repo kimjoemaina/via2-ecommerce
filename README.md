@@ -52,7 +52,7 @@ Buy me a coffee. It'll help me stay motivated! ☕
 
 ## 🤙 Reach Out
 
-[Linkedin](https://www.linkedin.com/in/joemainak/)
+[Linkedin](https://www.linkedin.com/in/joemainak/)<\br>
 [Twitter](https://twitter.com/joemainak)
 
 
