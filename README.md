@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#-prerequisites">Prerequisites</a> · <a href="#-introduction">Introduction</a> · <a href="#-Demo">Demo</a> · 
-  <a href="#-contributing">Contributing</a> · <a href="#-donate">Donate</a>
+  <a href="#-contributing">Contributing</a> · <a href="#-donate">Donate</a> · <a href="#-reach out">Reach Out</a>
 </p>
 
 ## Prerequisites
@@ -49,6 +49,11 @@ If you'd like to contribute, feel free to open a [pull request](https://github.c
 Buy me a coffee. It'll help me stay motivated! ☕
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=XVNG6ATBXFJAC)\
+
+## 🤙 Reach Out
+
+[Linkedin](https://www.linkedin.com/in/joemainak/)
+[Twitter](https://twitter.com/joemainak)
 
 
 
