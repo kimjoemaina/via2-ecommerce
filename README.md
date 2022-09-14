@@ -1,4 +1,4 @@
-<p align="center"><img src="https://via2-ecommerce.s3.amazonaws.com/images/logo.png" width="auto" height="auto"></p>
+<p align="center"><img src="https://joemainak.pythonanywhere.com/static/images/logo.png" width="auto" height="auto"></p>
 <h3 align="center">Via2-Ecommerce Django Application</h3>
 <p align="center"><a href="https://via2-ecommerce.herokuapp.com/">Via2 Ecommerce (Heroku)</a></p>
 
