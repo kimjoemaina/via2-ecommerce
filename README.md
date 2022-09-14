@@ -19,9 +19,7 @@ To run the application in your environment, you need:
 
 Via2 is wordplay on the swahili word 'viatu' which means shoes. The web app employs Django as the back-end and HTML, CSS, JS for the front-end.
 
-The DB used in Postgres. However, you can use any database of your choice. Ensure to enter your credentials in the settings file and to update your environemt variables.
-
-Additionally, static/media files are stored in AWS S3 buckets. You need to have prior knowledge of AWS buckets and IAM to configure S3.
+The DB used in Postgres. However, you can use any database of your choice. Ensure to enter your credentials in the settings file and to update your environment variables.
 
 NB: The PayPal checkout is currently a development sandbox. Customize this to your own sandbox for testing. Also note that on checkout the grand total (KES) is converted to USD.
 
