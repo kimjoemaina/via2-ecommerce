@@ -1,0 +1,48 @@
+version: '3.8'
+
+networks:
+  via2-net:
+    driver: bridge
+
+services:
+  db:
+    image: mysql:8.1.0
+    networks:
+      - via2-net
+    ports:
+      - "3306:3306"
+    env_file:
+      - .env
+    container_name: via2db
+
+  via2main:
+    build: 
+      context: .
+    volumes:
+      - static:/via2/static
+    networks:
+      - via2-net
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    container_name: via2main
+
+  nginx:
+    build:
+      context: ./nginx
+    volumes:
+      - static:/static
+    networks:
+      - via2-net
+    ports:
+      - "80:80"
+    depends_on:
+      - via2main
+    container_name: via2-nginx
+
+volumes:
+  static:
+

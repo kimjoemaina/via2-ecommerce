@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8-mj_7h-=u9&t%e3xm!)8x20yvz)vfm3dblg91rpavsj$wm*9d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['via2.onrender.com', '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -87,26 +87,23 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY='same-origin-allow-popups'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': config("DATABASE_ENGINE"),
-#         # 'NAME': BASE_DIR / 'db.sqlite3',
-#         'NAME': config("DATABASE_NAME"),
-#         'HOST': config("DATABASE_HOST"),
-#         'PORT': 5432,
-#         'USER': config("DATABASE_USER"),
-#         'PASSWORD': config("DATABASE_PASSWORD"),
-
-        
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config("MYSQL_DATABASE"),
+        'HOST': 'db',
+        'PORT': 3306,
+        'USER': config("MYSQL_USER"),
+        'PASSWORD': config("MYSQL_PASSWORD"),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation

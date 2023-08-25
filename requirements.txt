@@ -12,8 +12,8 @@ django-storages==1.12.3
 gunicorn==20.1.0
 idna==3.3
 jmespath==1.0.1
+mysqlclient==2.2.0
 Pillow==9.2.0
-psycopg2-binary==2.9.3
 python-dateutil==2.8.2
 python-decouple==3.6
 python-dotenv==0.20.0
@@ -22,4 +22,5 @@ s3transfer==0.6.0
 six==1.16.0
 sqlparse==0.4.2
 urllib3==1.26.10
+uWSGI==2.0.22
 whitenoise==6.2.0
